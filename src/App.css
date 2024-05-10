@@ -1,6 +1,9 @@
 *{
     font-family: "EB Garamond", serif;
 }
+body{
+    overflow-x: hidden;
+}
 .icon{
     width: 30px;
     height: 30px;
@@ -66,6 +69,26 @@
     transform: scale(1.2);
 }
 
-.c{
-   
+#myBtn{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: maroon;
+    border: none;
+    cursor: pointer;
+    color: white;
+    
 }
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .form{
+    justify-content: center;
+    align-items: center;
+ 
+  }

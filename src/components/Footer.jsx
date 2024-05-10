@@ -1,52 +1,68 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 function Footer() {
   return (
-    <div>
-      <div style={{height:'300px',marginTop:'500px',backgroundColor:'black',color:'white'}} className='d-flex justify-content-center w-100 align-items-center flex-column'>
-        <div className='d-flex justify-content-evenly align-items-center w-100'>
 
-            <div style={{width:'400px'}} className="websites">
-            <h4 className='mb-3'>
-                
-            </h4>
-            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis culpa sit qui consectetur, quod animi expedita aliquid nam illum dolorem incidunt.</h6>
-            <button className='btn  ms-2' style={{backgroundColor:'maroon'}}>View more</button>
-            </div>
+      <>
+      <div className=' row  '  style={{height:'700px',marginTop:'500px',backgroundColor:'black',color:'white'}}>
 
-            <div className="links d-flex flex-column">
-            <h4 className='mb-3'>Links</h4>
-                <Link to={'/'} style={{textDecoration:'none', color:'white'}}>Landing Page</Link>
-                <Link to={'/Home'} style={{textDecoration:'none', color:'white'}}>Home Page</Link>
-                <Link to={'/WatchHistory'} style={{textDecoration:'none', color:'white'}}>Watch History</Link>
-            </div>
+     <div className='main'>
+      <marquee behavior="" direction="left">
+        <div style={{fontSize:'100px'}}><h6 style={{color:'black'}}>_</h6>  NILAMBUR SKILL  
+        FOUNDATION_   <i class="fa-solid  fa-pen-fancy" style={{fontSize:'90px'}}></i>_  
+        NILAMBUR SKILL  
+        FOUNDATION  </div>   
+       
+   
+      </marquee>
+     </div>
+        <div className='row ms-5' >
+        <div className='col-lg-4  ' >
+      <h3 >For more in-depth course descriptions, feel free to reach out.</h3>
+      <button className='btn ' style={{backgroundColor:'maroon'}}>Read All News</button>
+      </div>
+      <div className='col-lg-2'>
+        <h4>QUICKLINKS</h4>
+        <h6>
+        About <br />
+        Courses <br />
+        Hostel <br />
+        News <br /> 
+        Contact <br />
+        </h6>
+      </div>
+      <div className='col-lg-2'>
+        <h4>CONTACT US</h4>
+        <h6>
+               Rays Med/Entrance Coaching
+           Corporate Office,
+             3rd Floor, KKKM2 Tower,
+            Thondayad, Kozhikode,
+            Kerala 673016
+             +91 8129 241 616
+                 0495-2727355 /</h6>    
+                    </div>
+        <div className='col-lg-3'>
+          <h4>REQUEST CALLBACK</h4>
+          <h6>
+                Please give us a number and we’ll call back at your convenience.</h6>     
 
-            <div className="guides d-flex flex-column">
-            <h4 className='mb-3'>Guides</h4>
-                <Link to={'https://bootswatch.com/'} style={{textDecoration:'none', color:'white'}}>React</Link>
-                <Link to={'https://react-bootstrap.netlify.app/'} style={{textDecoration:'none', color:'black'}}>React Bootstrap</Link>
-                <Link to={'https://bootswatch.com/'} style={{textDecoration:'none', color:'white'}}>Bootswatch</Link>
-            </div>
-
-            <div className="contacts d-flex flex-column">
-                <h4 className='mb-3'>Contact us</h4>
-                <div className='d-flex'>
-                    <input type="text" className='form-control' placeholder='Enter e-mail id'/>
-                    <button className='btn btn ms-2' style={{backgroundColor:'maroon'}}>Subscribe</button>
+               <div className='d-flex'>
+                    <input type="number" className='form-control w-100' placeholder='Enter Yor Ph No'/>
+                    <button style={{backgroundColor:'maroon'}} className='btn ms-2'>   <i  class="fa-solid fa-arrow-right " ></i>
+                </button>
                 </div>
-                <div className='d-flex justify-content-evenly align-items-center mt-3'>
-                <Link to={'https://bootswatch.com/'} style={{textDecoration:'none', color:'white'}}><i class="fa-brands fa-instagram fa-2x"></i></Link>
-                <Link to={'https://react-bootstrap.netlify.app/'} style={{textDecoration:'none', color:'white'}}><i class="fa-brands fa-facebook fa-2x"></i></Link>
-                <Link to={'https://bootswatch.com/'} style={{textDecoration:'none', color:'white'}}><i class="fa-brands fa-whatsapp fa-2x"></i></Link>
-                <Link to={'https://bootswatch.com/'} style={{textDecoration:'none', color:'white'}}><i class="fa-brands fa-linkedin-in fa-2x"></i></Link>
-                </div>
             </div>
-            
-        </div>
-        <p>Copyright claims</p>
-    </div>
-    </div>
+            </div>
+            </div>
+
+      </>
+
+
+
+    
   )
 }
 
 export default Footer
+
+

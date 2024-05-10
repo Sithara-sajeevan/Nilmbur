@@ -9,8 +9,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 function Cources() {
   return (
   <>
-  <div  style={{backgroundColor:'darkgreen',marginTop:'10rem',height:'200px',textAlign:'center' ,width:'100%'}} >
-<h1  >Cources</h1>
+  <div  style={{backgroundColor:'maroon',marginTop:'10rem',height:'200px',textAlign:'center' ,width:'100%',color:'white'}} >
+<h1 style={{marginTop:'50px'}}  >Cources</h1>
 </div>
 
 

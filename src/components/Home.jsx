@@ -5,10 +5,14 @@ import  image2 from '../image/image2.avif'
 import Carousel from 'react-bootstrap/Carousel';
 import image3 from '../image/100.avif'
 import image4 from '../image/image4.avif'
+
+
 function Home() {
+
+
   return (
     <div> 
-<Carousel data-bs-theme="dark" style={{padding:'50px',marginTop:'100px'}}>
+<Carousel data-bs-theme="dark" style={{marginTop:'100px'}}>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -45,7 +49,7 @@ function Home() {
 {/* card */}
 
 
-  <div className='card2'>
+  <div className='card2 ' style={{marginTop:'50px'}}>
   <Card  style={{ width: '20rem',height:'20rem',backgroundColor:'black' }}>
 
 <Card.Body style={{marginTop:'70px'}}>
@@ -104,6 +108,13 @@ function Home() {
 
   </div>
 
+{/* 
+<button className='btn'   onclick="btnScroll()" id='btnScroll'>
+<i class="fa-solid fa-arrow-up " ></i>
+</button>
+ 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ */}
 </div>
 
 
