@@ -3,7 +3,7 @@ function Footer() {
   return (
 
       <>
-      <div className=' row  '  style={{height:'700px',marginTop:'500px',backgroundColor:'black',color:'white'}}>
+      <div className='row  '  style={{height:'700px',marginTop:'500px',backgroundColor:'black',color:'white'}}>
 
      <div className='main'>
       <marquee behavior="" direction="left">
@@ -48,7 +48,7 @@ function Footer() {
 
                <div className='d-flex'>
                     <input type="number" className='form-control w-100' placeholder='Enter Yor Ph No'/>
-                    <button style={{backgroundColor:'maroon'}} className='btn ms-2'>   <i  class="fa-solid fa-arrow-right " ></i>
+                    <button style={{backgroundColor:'maroon'}} className='btn ms-3'>   <i  class="fa-solid fa-arrow-right " ></i>
                 </button>
                 </div>
             </div>

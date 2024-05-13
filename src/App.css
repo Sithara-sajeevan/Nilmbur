@@ -1,9 +1,16 @@
 *{
     font-family: "EB Garamond", serif;
+     margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 body{
-    overflow-x: hidden;
-}
+   overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+  }
 .icon{
     width: 30px;
     height: 30px;
@@ -27,25 +34,25 @@ body{
     background-color: rgb(102, 25, 25);
     color: white;
 }
-.card{
+ .card{
     border-radius: 15px;
     display: inline-block;
     color: white;
-     /*  margin-bottom: 300px;
+     /* 
         height: 270px;
        margin-top: 50px; */
        
 
-}
-.card:hover {
+} 
+.c2:hover {
     background-image: linear-gradient(to bottom right, rgb(16, 82, 29) , rgb(8, 43, 10));
 
 }
 .container {
     display: flex;
-     max-width: 800px; 
-    margin: 0 auto;
-}
+/*     max-width: 800px; 
+ */     
+} 
 .nav{
     position: sticky;
     
@@ -60,7 +67,9 @@ body{
 
 .inner{
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
+     
+  
 }
 .inner img{
     transition: all 1.5s ease;
@@ -91,4 +100,42 @@ body{
     justify-content: center;
     align-items: center;
  
+  }
+
+  .c1{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+
+  }
+  @media screen and (min-width:600px){
+  .c1{
+    flex-direction: column;
+  }
+
+  
+  }
+  @media screen and (max-width: 600px) {
+    .c3 {
+      width: 100%;
+      display: block;
+    
+    }
+  }
+  .text{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .c2{
+    border-radius:  15px 15px 0px 0px;
+  background-color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    .c2 {
+      width: 100%;
+      display: block;
+    
+    }
   }

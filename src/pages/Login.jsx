@@ -11,7 +11,7 @@ import { Button, Form } from 'react-bootstrap'
 function Login() {
   return (
     <>
-    <div className='d-flex' style={{marginTop:'5rem',color:'white'}}>
+    <div className='d-flex ' style={{marginTop:'2rem',color:'white'}}>
     <div className='col-lg-4'></div>
 
     <div className='col-lg-4' style={{marginTop:'150px',width:'500px' ,alignItems:'center',backgroundColor:'darkgreen',height:'300px'}}>

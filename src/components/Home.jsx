@@ -11,17 +11,15 @@ function Home() {
 
 
   return (
-    <div> 
-<Carousel data-bs-theme="dark" style={{marginTop:'100px'}}>
+    <> 
+<Carousel className='container-fluid' data-bs-theme="dark" style={{marginTop:'100px'}}>
       <Carousel.Item>
         <img
           className="d-block w-100"
           src={image}
           alt=""
         />
-        <Carousel.Caption>
-          <h5></h5>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -29,9 +27,7 @@ function Home() {
           src={image2}
           alt="Second slide"
         />
-        <Carousel.Caption>
-          <h5></h5>
-        </Carousel.Caption>
+        
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -39,83 +35,71 @@ function Home() {
           src={image3}
           alt="Third slide"
         />
-        <Carousel.Caption>
-          <h5></h5>
-         
-        </Carousel.Caption>
+      
       </Carousel.Item>
     </Carousel>
 
-{/* card */}
 
 
-  <div className='card2 ' style={{marginTop:'50px'}}>
-  <Card  style={{ width: '20rem',height:'20rem',backgroundColor:'black' }}>
+<div className='c3 container mt-5' style={{justifyContent:'center'}}>
+  <div className='c1 '>
 
-<Card.Body style={{marginTop:'70px'}}>
-  <Card.Title><h4>Nilambur Skill <br /> Foundation</h4></Card.Title>
-  <Card.Text style={{backgroundColor:'red',marginLeft:'15rem'}} className='icon ' >
-  <i  class="fa-solid fa-arrow-right " ></i>
-  </Card.Text>
-
-</Card.Body>
-<div className='inner'>
-<Card.Img variant="top" style={{marginTop:'5rem'}} className='cardimg' src={image3}/>
-
-</div>
-
-</Card>
-
-
-
-
-<Card style={{ width: '20rem',height:'25rem',backgroundColor:'maroon' }}>
-
-<Card.Body style={{marginTop:'70px'}}>
-<Card.Title> <h4>Nilambur  Online  <br />Classes</h4> </Card.Title>
-<Card.Text style={{backgroundColor:'red',marginLeft:'15rem'}} className='icon ' >
+  <Card.Title className='c2' style={{ width:'20rem',height:'15rem'}} >   
+   <div style={{width: '20rem',height:'15rem',marginTop:'6rem',textAlign:'center',color:'white'}}>
+  <h4>Pg Diploma <br /> Cources</h4>
+  <Card.Text    style={{backgroundColor:'red',marginLeft:'15rem'}} className='icon2 '>
 <i  class="fa-solid fa-arrow-right " ></i>
-
 </Card.Text>
-
-</Card.Body>
+  </div>
+  </Card.Title>
 <div className='inner'>
-<Card.Img variant="top" style={{marginTop:'5rem'}} className='cardimg' src={image4}/>
+<Card.Img variant="top" style={{  width:'20rem',height:'15rem'}} className='cardimg' src={image4}/>
 
 </div>
-</Card>
-
-
-
-
-
-
-<Card style={{ width: '20rem',height:'25rem',backgroundColor:'black' }}>
-
-<Card.Body  style={{marginTop:'70px'}}>
-<Card.Title><h4>Pg Diploma <br /> Cources</h4></Card.Title>
-<Card.Text   style={{backgroundColor:'red',marginLeft:'15rem'}} className='icon2 '>
-<i  class="fa-solid fa-arrow-right " ></i>
-
-</Card.Text>
-
-</Card.Body>
-<div className='inner'>
-<Card.Img variant="top" style={{marginTop:'5rem'}} className='cardimg' src={image3}/>
-
-</div>
-</Card>
-
   </div>
 
-{/* 
-<button className='btn'   onclick="btnScroll()" id='btnScroll'>
-<i class="fa-solid fa-arrow-up " ></i>
-</button>
- 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
- */}
+
+
+  
+  <div className='c1'>
+
+<Card.Title className='c2' style={{ width:'20rem',height:'15rem'}}>
+      <div style={{width: '20rem',height:'15rem',marginTop:'6rem',textAlign:'center',color:'white'}}>
+<h4>Pg Diploma <br /> Cources</h4>
+<Card.Text    style={{backgroundColor:'red',marginLeft:'15rem'}} className='icon2 '>
+<i  class="fa-solid fa-arrow-right " ></i>
+</Card.Text>
 </div>
+</Card.Title>
+<div className='inner'>
+<Card.Img variant="top" style={{  width:'20rem',height:'15rem'}} className='cardimg' src={image4}/>
+</div>
+</div>
+
+<div className='c1'>
+  <Card.Title className='c2' style={{ width:'20rem',height:'15rem'}} >
+        <div style={{width: '20rem',height:'15rem',marginTop:'6rem',textAlign:'center',color:'white'}}>
+  <h4>Pg Diploma <br /> Cources</h4>
+  <Card.Text    style={{backgroundColor:'red',marginLeft:'15rem'}} className='icon2 '>
+<i  class="fa-solid fa-arrow-right " ></i>
+</Card.Text>
+  </div>
+  </Card.Title>
+<div className='inner'>
+<Card.Img variant="top" style={{  width:'20rem',height:'15rem'}} className='cardimg' src={image4}/>
+
+</div>
+  </div>
+  </div>
+
+
+
+  
+
+
+
+
+</>
 
 
   )
