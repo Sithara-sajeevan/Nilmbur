@@ -4,8 +4,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+
+
+  const navigate = useNavigate() 
+
+
   return (
      <>
            
@@ -33,7 +40,7 @@ function Header() {
                   <Nav.Link href="#action2">Hostel</Nav.Link>
                   <Nav.Link href="#action2">News</Nav.Link>
                   <Nav.Link href="#action2">Contact</Nav.Link>
-                  <Nav.Link href="login"><i class="fa-solid fa-user"></i></Nav.Link>
+                  <Nav.Link href='/login' ><i class="fa-solid fa-user" ></i></Nav.Link>
                    <Nav.Link href="#link" style={{fontSize:'15px',marginTop:'5px'}}>
                     +91123456
                     </Nav.Link> 

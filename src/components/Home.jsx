@@ -5,7 +5,7 @@ import  image2 from '../image/image2.avif'
 import Carousel from 'react-bootstrap/Carousel';
 import image3 from '../image/100.avif'
 import image4 from '../image/image4.avif'
-
+import ListGroup from 'react-bootstrap/ListGroup';
 
 function Home() {
 
@@ -96,8 +96,17 @@ function Home() {
 
   
 
+<div style={{alignItems:'center',textAlign:'center',justifyContent:'center'}} >
 
+  <ul className='container d-flex ' style={{alignItems:'center',textAlign:'center'}}>
+    <li>Nilambur</li>
+    <li>Nilambur</li>
+    <li>Nilambur</li>
 
+  </ul>
+
+ 
+</div>
 
 </>
 
