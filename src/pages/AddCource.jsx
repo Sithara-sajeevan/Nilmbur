@@ -64,7 +64,7 @@ const handleCource=async(e)=>{
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title></Modal.Title>
         </Modal.Header>
         <Modal.Body>
           
@@ -78,7 +78,7 @@ const handleCource=async(e)=>{
             </div>
           <div className='col-lg-6'>
             <div className='mb-3 mt-3'>
-              <input type="text" placeholder='enter the content' style={{width:'13rem',height:'50px'}} name="" id=""   value={courceDetails.content} onChange={(e) => setCourceDetails({ ...courceDetails, content: e.target.value })}  />
+              <input type="text" placeholder='enter cource name' style={{width:'13rem',height:'50px'}} name="" id=""   value={courceDetails.content} onChange={(e) => setCourceDetails({ ...courceDetails, content: e.target.value })}  />
             </div>
           </div>
         </div>
