@@ -43,11 +43,19 @@ const handleCource=async(e)=>{
   e.preventDefault()
   const{content,image}=courceDetails
 
-  if(!content,!image){
-    alert('please fill compleatdly')
+  if(!content || !image){
+    alert('please fill completly')
   }
   else{
-    const result =await addCourceAPI()
+
+    const reqBody =new FormData()
+    reqBody.append("content",content)
+    reqBody.append("image",image)
+ 
+    const reqHeader = {
+      "Content-Type": "multipart/form-data"
+    }
+    const result =await addCourceAPI(reqBody,reqHeader)
     console.log(result);
   }
 }

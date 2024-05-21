@@ -37,9 +37,9 @@ function Header() {
                 <Nav className="justify-content-end flex-grow-1 ">
                   <Nav.Link href="/about">About</Nav.Link>
                   <Nav.Link href="/cources" >Courses</Nav.Link>
-                  <Nav.Link href="#action2">Hostel</Nav.Link>
-                  <Nav.Link href="#action2">News</Nav.Link>
-                  <Nav.Link href="#action2">Contact</Nav.Link>
+                  <Nav.Link href="/hostel">Hostel</Nav.Link>
+                  <Nav.Link href="/news">News</Nav.Link>
+                  <Nav.Link href="/contact">Contact</Nav.Link>
                   <Nav.Link href='/login' ><i class="fa-solid fa-user" ></i></Nav.Link>
                    <Nav.Link href="#link" style={{fontSize:'15px',marginTop:'5px'}}>
                     +91123456

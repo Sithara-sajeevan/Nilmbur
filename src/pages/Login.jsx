@@ -30,26 +30,14 @@ function Login() {
   else{
       const result=await loginAPI(adminData)
       console.log(result);
-      if (result.data.email==="admin@gmail.com" && result.data.password==="adin123") {
+      if (result.data.email==="nilamburskillfoundation@gmail.com.com" && result.data.password==="nilamburskillfoundatuion000") {
           navigate('/edit')
           
       }
       else{
          navigate('/home')
       }
-      if(result.status===200){
-          Swal.fire({
-              icon: 'success',
-              title: 'Login Successfull!',
-             
-             
-            })
-          /*  setauthtoken(true) 
-          
-
-          sessionStorage.setItem(" existuser",JSON.stringify(result.data.existuser))
-          sessionStorage.setItem("token",(result.data.token))
-         
+     
 
           setAdminData({
              
@@ -95,20 +83,18 @@ const handlelogin = async(e)=>{
 
     <div className='col-lg-4' style={{marginTop:'150px',width:'500px' ,alignItems:'center',backgroundColor:'darkgreen',height:'300px'}}>
     <h2 style={{textAlign:'center'}} >Welcome Admin</h2>
-    <Form className='form  ms-5' >
-      <Form.Group style={{}} controlId="formBasicEmail">
-        <Form.Label></Form.Label>
+    <Form className='form  ms-5 mt-3' >
+      <Form.Group  controlId="formBasicEmail">
         <Form.Control type="email" placeholder="Enter email"  style={{width:'25rem'}}  value={adminData.email} onChange={(e) => setAdminData({ ...adminData, email: e.target.value })}/>
         
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label></Form.Label>
+      <Form.Group className="mb-3 mt-4" controlId="formBasicPassword">
         <Form.Control type="password" placeholder="Password" style={{width:'25rem'}}  value={adminData.password} onChange={(e) => setAdminData({ ...adminData, password: e.target.value })}/>
       </Form.Group>
      
-      <Button variant="" style={{backgroundColor:'maroon'}} type="submit"   onClick={handlelogin}   >
-        <Link to={'/edit'}>Login</Link>
+      <Button variant="" style={{backgroundColor:'maroon',}} type="submit"   onClick={handlelogin}   >
+        <Link style={{textDecoration:'none',color:'white'}} to={'/edit'}>Login</Link>
       </Button>
     </Form>
     </div>

@@ -232,5 +232,36 @@ body{
   position: absolute;
   top: 0px;
   left: 930px;
+
+}
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+   width: 500px;
   
+}
+
+@media (min-width:600px) {
+
+ 
+  .contact{
+    margin-bottom: 12px;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+}
+@media (min-width:600px) {
+
+ 
+  .location{
+    margin-bottom: 12px;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+}
+.hover :hover{
+background-color:white;
+border-radius: 20px;
 }

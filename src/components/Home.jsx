@@ -111,44 +111,7 @@ function Home() {
  
 </div>
 </section>
-{/*
-<section>
-  
 
-
-<div className='row d-flex'>
-<div className=' col-lg-2 mt-5'>
-</div>
-<div className=' col-lg-10' id='container'>
-  
-<img className='circle' src="https://rayseducation.org/wp-content/themes/rays/images/emblem.png"    style={{marginLeft:'750px',marginTop:'px'}} alt="" />
-<img style={{width:'100%'}} src={img6} alt="" />
-{/* <div className='container'>
-
-
-</div> 
-<div class="centered d-flex">
-  <div className='col-lg-6'>
-    <img src={img7} style={{width:'35rem',marginRight:'50rem'}} alt="" />
-  </div>
-  <div className='col-lg-4' style={{color:'white'}}>
-  <h4>RAYS – Making every student a success story</h4>
-  <p>
-RAYS Education was established in 2005 with the aim of providing and enhancing excellent education in the disciplines of engineering and medical. With its corporate office in Calicut, Kerala, RAYS has now grown to include Kannur, Vadakara, and Trivandrum.
-</p>
-  </div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-  */}
 
  
  

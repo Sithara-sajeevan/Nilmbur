@@ -3,7 +3,7 @@ function Footer() {
   return (
 
       <>
-      <div className='row  '  style={{height:'700px',marginTop:'500px',backgroundColor:'black',color:'white'}}>
+      <div className='row  '  style={{height:'700px',marginTop:'5rem',backgroundColor:'black',color:'white'}}>
 
      <div className='main'>
       <marquee behavior="" direction="left">
