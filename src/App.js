@@ -10,6 +10,10 @@ import Edit from './pages/Edit';
 import Contact from './pages/Contact';
 import Hostel from './pages/Hostel';
 import News from './pages/News';
+import Latest from './pages/Latest';
+import Examination from './pages/Examination';
+import Events from './pages/Events';
+import Circular from './pages/Circular';
 
 function App() {
   return (
@@ -23,6 +27,11 @@ function App() {
   <Route path='/edit' element={<Edit/>}/>
   <Route path='/contact' element={<Contact/>}/>
   <Route path='/hostel' element={<Hostel/>}/>
+  <Route path='/news' element={<News/>}/>
+  <Route path='/latest' element={<Latest/>}/>
+  <Route path='/circular' element={<Circular/>}/>
+  <Route path='/examination' element={<Examination/>}/>
+  <Route path='/events' element={<Events/>}/>
   <Route path='/news' element={<News/>}/>
 
 

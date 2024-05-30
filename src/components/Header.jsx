@@ -5,8 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Swal from 'sweetalert2';
-import { useNavigate } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
 function Header() {
 
 
@@ -34,17 +33,41 @@ function Header() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 ">
-                  <Nav.Link href="/about">About</Nav.Link>
-                  <Nav.Link href="/cources" >Courses</Nav.Link>
-                  <Nav.Link href="/hostel">Hostel</Nav.Link>
-                  <Nav.Link href="/news">News</Nav.Link>
-                  <Nav.Link href="/contact">Contact</Nav.Link>
-                  <Nav.Link href='/login' ><i class="fa-solid fa-user" ></i></Nav.Link>
+              
+                 <div >
+                 <Link  style={{textDecoration:'none',color:'black'}} to={'/about'}>About</Link></div> 
+                 <div>                
+                    <Link  style={{textDecoration:'none',color:'black'}} to={'/cources'}>Courses</Link>
+                 </div>
+                 <div>                 
+                   <Link  style={{textDecoration:'none',color:'black'}} to={'/hostel'}>Hostel</Link>
+                 </div>
+                 <div>                
+                    <Link  style={{textDecoration:'none',color:'black'}} to={'/news'}>News</Link>
+                  </div>
+                 <div>
+                 <Link  style={{textDecoration:'none',color:'black'}} to={'/contact'}>Contact</Link>
+
+                 </div>
+                
+                  <div class="dropdown justify-content-end flex-grow-1  ">
+                  <Link style={{textDecoration:'none',color:'black'}} class="dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                   Notifications
+                  </Link>
+
+                  <ul  class="dropdown-menu start" aria-labelledby="dropdownMenuLink">
+                   <li><Link  to={'/latest'} class="dropdown-item" >All Latest </Link></li>
+                    <li><Link to={'/circular'} class="dropdown-item"     >Circulars</Link></li>
+                     <li><Link to={'/examination'} class="dropdown-item" >Examinations</Link></li>
+                      <li><Link to={'/Events'} class="dropdown-item" >Events</Link></li>
+                         </ul>
+                    </div>
+          
+                {/*   <Nav.Link href='/login' ><i class="fa-solid fa-user" ></i></Nav.Link>
                    <Nav.Link href="#link" style={{fontSize:'15px',marginTop:'5px'}}>
                     +91123456
                     </Nav.Link> 
-                </Nav>
+                </Nav> */}
                 
               </Offcanvas.Body>
             </Navbar.Offcanvas>

@@ -1,18 +1,18 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import img from '../image/image4.avif'
-
+import img1 from '../image/WEB bg1 .jpg'
 
 
 
 function Cources() {
   return (
   <>
-  <div  style={{backgroundColor:'maroon',height:'100px',textAlign:'center' ,width:'100%',color:'white',alignContent:'center'}} >
+ <div>
+    <img src={img1} className='bg' alt="Snow" style={{width:'100%'}}/>
    
-    <h1 className='' style={{marginTop:'150px'}} >Cources</h1>
-
-</div>
+    <div class="centered"><h2>Cources</h2></div>
+  </div>
 
 
      <div className='ms-5' style={{ padding:'30px', marginTop:'40px'}}  > 
